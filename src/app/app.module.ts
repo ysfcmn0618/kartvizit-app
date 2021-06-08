@@ -7,12 +7,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { CardsComponent } from './components/cards/cards.component';
-import {CardItemComponent} from './components/cards/card-item/card-item.component';
+import { CardItemComponent } from './components/cards/card-item/card-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { CardModalComponent } from './components/cards/card-modal/card-modal.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import {MatCardModule} from '@angular/material/card';
     HomeComponent,
     AboutComponent,
     CardsComponent,
-    CardItemComponent
+    CardItemComponent,
+    CardModalComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,9 @@ import {MatCardModule} from '@angular/material/card';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

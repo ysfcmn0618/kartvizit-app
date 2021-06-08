@@ -14,6 +14,7 @@ export class CardItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log("card items",this.card);
   }
 
 }

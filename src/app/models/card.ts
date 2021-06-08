@@ -1,4 +1,4 @@
-export interface Card {
+export interface Card {    
     title: string,
     name: string,
     phone: string,
